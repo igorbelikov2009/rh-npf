@@ -1,0 +1,85 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  scroll-behavior: smooth; }
+
+.contacts-header {
+  width: 100%;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .contacts-header {
+      padding: 48px 28px; } }
+  .contacts-header__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+  .contacts-header__row {
+    display: flex;
+    flex-wrap: wrap; }
+  .contacts-header__column {
+    width: 100%; }
+    @media screen and (min-width: 576px) {
+      .contacts-header__column {
+        width: 50%; } }
+    .contacts-header__column:first-of-type {
+      margin-bottom: 48px; }
+      @media screen and (min-width: 576px) {
+        .contacts-header__column:first-of-type {
+          margin-bottom: 0; } }
+  .contacts-header__header {
+    display: block;
+    width: 100%;
+    font-size: 34px;
+    line-height: 48px;
+    color: #000;
+    margin-bottom: 24px; }
+    .contacts-header__header_address {
+      display: block;
+      width: 100%;
+      font-size: 34px;
+      line-height: 48px;
+      color: #000;
+      margin-bottom: 24px; }
+      @media screen and (min-width: 576px) {
+        .contacts-header__header_address {
+          margin-bottom: 68px; } }
+  .contacts-header__title {
+    display: block;
+    color: #28323c;
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin: 24px 0; }
+  .contacts-header__paragraph {
+    display: block;
+    color: #5a646e;
+    line-height: 1.5rem;
+    margin: 12px 0;
+    font-weight: 500; }
+    .contacts-header__paragraph_span {
+      display: block;
+      font-size: 13px;
+      line-height: 24px;
+      font-style: italic;
+      color: #5a646e; }
+    .contacts-header__paragraph_link {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      color: #50287d;
+      text-decoration: none;
+      outline: none; }
+    .contacts-header__paragraph_heading {
+      display: block;
+      color: #28323c;
+      font-size: 18px;
+      line-height: 1.5rem;
+      font-weight: 500;
+      margin: 24px 0; }
+
+.contacts-map {
+  width: 100%;
+  height: 552px;
+  border: 1px solid gray; }

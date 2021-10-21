@@ -1,0 +1,166 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  scroll-behavior: smooth; }
+
+.news {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box; }
+  @media screen and (min-width: 576px) {
+    .news {
+      padding-top: 48px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 24px; } }
+  .news__container {
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto; }
+  .news__link-to-news {
+    margin-bottom: 24px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none; }
+  .news__icons {
+    width: 24px;
+    height: 24px;
+    position: relative; }
+  .news__image {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg); }
+    .news__image:nth-of-type(2) {
+      opacity: 0; }
+    .news__image:last-of-type:hover {
+      display: none; }
+  .news__link-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #96a0aa;
+    display: block;
+    margin-left: 12px; }
+    .news__link-title:hover {
+      color: black; }
+  .news__header {
+    width: 100%; }
+  .news__header-heading {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .news__header-heading {
+        font-size: 34px;
+        line-height: 48px; } }
+  .news__header-date {
+    font-size: 16px;
+    line-height: 24px;
+    color: #78828c;
+    display: block;
+    margin-bottom: 24px; }
+  .news__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #5a646e;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    .news__paragraph_bold {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: 700;
+      color: #010;
+      margin-top: 24px;
+      margin-bottom: 24px; }
+    .news__paragraph_italic {
+      font-weight: 400;
+      font-style: italic;
+      color: #010;
+      margin-top: 24px;
+      margin-bottom: 24px; }
+    .news__paragraph_italic-bold {
+      font-weight: 700;
+      font-style: italic;
+      color: #010;
+      margin-top: 24px;
+      margin-bottom: 24px; }
+    .news__paragraph_link {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      color: #8967b1; }
+      .news__paragraph_link:hover {
+        color: #50287d; }
+    .news__paragraph_before {
+      font-weight: 400;
+      font-style: normal;
+      color: #5a646e;
+      display: block;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      margin-left: 24px;
+      position: relative; }
+      .news__paragraph_before::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #50287d;
+        left: -24px;
+        top: 8px; }
+  .news__footer {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 0; }
+    @media screen and (min-width: 576px) {
+      .news__footer {
+        padding-top: 48px;
+        padding-bottom: 24px; } }
+  .news__footer-heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #000000;
+    display: block;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .news__footer-heading {
+        margin-bottom: 48px; } }
+  .news__column {
+    padding: 24px 0 48px;
+    border-top: 1px solid #e4e4e4; }
+  .news__link {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #8967b1; }
+    .news__link:hover {
+      color: #50287d; }
+  .news__date {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    color: #5a646e;
+    margin-top: 24px; }
+  .news__image-bank-vtb, .news__image-spring-holiday {
+    aspect-ratio: 660 / 440;
+    width: 100%; }

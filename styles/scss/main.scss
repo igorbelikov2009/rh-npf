@@ -1,0 +1,1144 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  // плавная прокрутка
+  scroll-behavior: smooth;
+}
+
+// top-bloc
+.top-block {
+  width: 100%;
+  margin: 0 auto;
+  height: 320px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+
+  @media screen and (min-width: 576px) {
+    height: 720px;
+
+    padding: 24px 28px 144px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 26px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 55px;
+      line-height: 74px;
+      margin-bottom: 24px;
+    }
+
+    &_span {
+      display: block;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  }
+
+  &__subheading {
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &_span {
+      display: block;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  }
+} // top-bloc
+
+// info
+.info {
+  width: 100%;
+  max-width: 960px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 24px;
+  padding-bottom: 72px;
+
+  @media screen and (min-width: 576px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__head {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 72px;
+    }
+  }
+
+  &__heading {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #28323c;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 48px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: 860px;
+    }
+  }
+
+  &__subheading {
+    display: block;
+    width: 100%;
+    max-width: 440px;
+    font-size: 13px;
+    color: #78828c;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: 560px;
+    }
+  }
+
+  &__bloc-images {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    aspect-ratio: 660 / 440;
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      max-width: calc(50% + 56px);
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(50% + 80px);
+    }
+
+    &:first-of-type {
+      position: static;
+
+      @media screen and (min-width: 576px) {
+        position: relative;
+        margin-top: 120px;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 87px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 112px;
+      }
+    }
+
+    &:last-of-type {
+      display: none;
+
+      @media screen and (min-width: 576px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__bloc {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 20px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      padding: 0 100px;
+    }
+  }
+
+  &__images-zdanie {
+    aspect-ratio: 660 / 440;
+    width: 100%;
+    margin-bottom: 24px;
+    display: block;
+
+    @media screen and (min-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__offer {
+    display: inline;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      max-width: 254px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 320px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      max-width: 360px;
+    }
+  }
+
+  &__offer-heading {
+    font-size: 18px;
+    line-height: 24px;
+    color: #28323c;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 48px;
+    }
+  }
+
+  &__offer-subheading {
+    font-size: 13px;
+    line-height: 24px;
+    color: #5a646e;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__button-container {
+    max-width: 200px;
+  }
+} // info
+
+//statistics
+.statistics {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 72px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 96px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: 576px) {
+      padding: 0 28px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 24px;
+    color: #28323c;
+    margin-bottom: 24px;
+    padding: 0 24px;
+
+    @media screen and (min-width: 576px) {
+      padding: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__bloc {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    width: 100%;
+    border: 1px solid #e4e6e8;
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+
+    @media screen and (min-width: 576px) {
+      width: 227px;
+      padding: 32px 32px 48px 32px;
+      display: block;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 192px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #28323c;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__span {
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    color: #5a646e;
+  }
+} // statistics
+
+// calculator
+.calculator {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 24px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 48px 0;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: 576px) {
+      padding: 0 28px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &__heading {
+    display: block;
+    font-size: 13px;
+    color: #5a646e;
+    margin-bottom: 24px;
+    margin-left: 24px;
+
+    @media screen and (min-width: 576px) {
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__subheading {
+    display: block;
+    font-size: 34px;
+    line-height: 48px;
+    color: #28323c;
+    margin-bottom: 24px;
+    margin-left: 24px;
+
+    @media screen and (min-width: 576px) {
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 55px;
+      line-height: 73.54px;
+      margin-bottom: 44px;
+    }
+  }
+
+  &__bloc {
+    width: 100%;
+    position: relative;
+  }
+
+  &__box {
+    width: 100%;
+    display: block;
+
+    @media screen and (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__sliders {
+    width: calc(100% - 48px);
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 576px) {
+      width: 63.53%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 41.66%;
+    }
+  }
+
+  &__graph-container {
+    width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 576px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 47.92%;
+      position: absolute;
+      bottom: 41px;
+      right: 0;
+      z-index: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 0;
+    }
+  }
+} // calculator
+
+// sliders
+.slider-block {
+  width: 100%;
+
+  &__age {
+    width: 100%;
+    display: block;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__switch {
+    min-width: 136px;
+    max-width: 136px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    position: relative;
+
+    @media screen and (min-width: 576px) {
+      margin-right: 24px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__age-slider {
+    width: 100%;
+    position: relative;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 13px;
+    color: #b5bdc8;
+  }
+
+  &__result {
+    font-size: 18px;
+    color: #0a1428;
+  }
+
+  &__time-invest-inner {
+    font-size: 11px;
+    color: #b5bdc8;
+    position: absolute;
+    bottom: -24px;
+    left: 36px;
+  }
+
+  &__pervonachalnyy-vznos,
+  &__yezhemesyachnyy-vznos,
+  &__srok-vyplaty {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__checkbox {
+    width: 100%;
+    display: block;
+  }
+
+  &__button-container {
+    width: 100%;
+    max-width: 272px;
+    display: block;
+    margin-top: 64px;
+
+    @media screen and (min-width: 576px) {
+      max-width: 200px;
+    }
+  }
+}
+// sliders
+
+// pension-info
+.pension-info {
+  width: 100%;
+  margin-bottom: 24px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 576px) {
+    width: 29.41%;
+    border-top: none;
+    border-bottom: none;
+    display: block;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    width: 47.92%;
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 576px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__v-budushchem {
+    padding: 24px;
+    width: 46.25%;
+    margin-right: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 576px) {
+      width: 100%;
+      margin-bottom: 24px;
+      border: 1px solid #e4e4e4;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 35.85%;
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+
+    &_wrapper {
+      width: 100%;
+      border-right: 1px solid #e4e4e4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (min-width: 576px) {
+        border-right: none;
+      }
+    }
+  }
+
+  &__output-pension {
+    color: #28323c;
+    margin-bottom: 96px;
+    font-size: 18px;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 96px;
+    }
+  }
+
+  &__description {
+    font-size: 13px;
+    color: #5a646e;
+
+    &_span {
+      display: block;
+      font-size: inherit;
+      color: inherit;
+
+      @media screen and (min-width: 576px) {
+        display: inline;
+        margin-bottom: 48px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__box {
+    display: block;
+    width: 53.43%;
+    border: none;
+
+    @media screen and (min-width: 576px) {
+      width: 100%;
+      border: 1px solid #e4e4e4;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 58.75%;
+    }
+  }
+
+  &__calculation {
+    width: 100%;
+    padding: 24px;
+
+    &_wrapper {
+      border-top: 1px solid #e4e4e4;
+    }
+
+    &:last-of-type {
+      // background-color: red;
+      padding-top: 0;
+      margin-top: 24px;
+    }
+  }
+
+  &__output-sum-nakoplen {
+    font-size: 18px;
+    color: #0a0a0a;
+  }
+
+  &__output-social {
+    font-size: 18px;
+    color: #0a0a0a;
+    margin-top: 24px;
+  }
+}
+// pension-info
+
+// grafik
+.grafik {
+  width: 100%;
+
+  &__diagramma {
+    width: 100%;
+    height: 191px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 576px) {
+      height: 200px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      height: 144px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__vertical-element {
+    height: 100%;
+    width: 1px;
+    background: #e4e4e4;
+  }
+
+  &__vybor-goda {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 576px) {
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__vybrannyy-god {
+    display: block;
+    font-size: 11px;
+    color: #96a0aa;
+  }
+
+  &__finansovyye-operatsii {
+    width: 100%;
+    display: block;
+    margin-left: 16px;
+
+    @media screen and (min-width: 576px) {
+      display: flex;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    color: #5a646e;
+    position: relative;
+
+    &:first-of-type {
+      margin-right: 43px;
+
+      &::before {
+        content: url(../../assets/icons/pointPurple8px.svg);
+        position: absolute;
+        top: 0;
+        left: -16px;
+      }
+    }
+
+    &:last-of-type {
+      &::before {
+        content: url(../../assets/icons/pointYellow8px.svg);
+        position: absolute;
+        top: 0;
+        left: -16px;
+      }
+    }
+  }
+  //
+} // grafik
+
+// calculator-image
+.calculator-image {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 120px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    @media screen and (min-width: 576px) {
+      padding: 0 28px;
+    }
+
+    @media screen and (min-width: 1216px) {
+      padding: 0;
+    }
+  }
+
+  &__bloc-images {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    aspect-ratio: 660 / 440;
+    width: 100%;
+    margin-bottom: 11px;
+
+    @media screen and (min-width: 576px) {
+      max-width: calc(50% + 56px);
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(50% + 80px);
+    }
+
+    &:nth-of-type(1) {
+      position: static;
+      z-index: 3;
+
+      @media screen and (min-width: 576px) {
+        margin-top: 120px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &:nth-of-type(2) {
+      position: absolute;
+      z-index: 3;
+
+      @media screen and (min-width: 576px) {
+        position: absolute;
+        margin-top: 120px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &:nth-of-type(3) {
+      position: static;
+      z-index: 1;
+      margin-bottom: 35px;
+
+      @media screen and (min-width: 576px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__attention {
+    width: 100%;
+    display: block;
+    position: static;
+
+    @media screen and (min-width: 576px) {
+      max-width: calc(50% - 60px);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: calc(50% - 92px);
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 13px;
+    color: #78828c;
+    position: relative;
+    margin-left: 36px;
+
+    &::before {
+      content: url(../../assets/icons/attention.svg);
+      position: absolute;
+      top: 0;
+      left: -36px;
+    }
+  }
+} // calculator-image
+
+// news-header
+.news-header {
+  width: 100%;
+  max-width: 960px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+
+  @media screen and (min-width: 576px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__heading {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 48px;
+    color: #28323c;
+    margin-bottom: 24px;
+  }
+} // news-header
+
+// offset-arrows
+.offset-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &__left-arrow {
+    position: relative;
+    width: 24px;
+    height: 26px;
+    cursor: pointer;
+
+    &:hover .offset-arrows__left-image:first-of-type {
+      display: block;
+    }
+
+    // offset-arrows__left-arrow_no-cursor
+    // добавляем в ("offset-arrows__left-arrow") !!!
+    &_no-cursor {
+      cursor: default;
+
+      &:hover .offset-arrows__left-image:first-of-type {
+        display: none;
+      }
+    }
+  }
+
+  &__right-arrow {
+    position: relative;
+    width: 24px;
+    height: 26px;
+    cursor: pointer;
+
+    &:hover .offset-arrows__right-image:first-of-type {
+      display: block;
+    }
+
+    // offset-arrows__right-arrow_no-cursor
+    // добавляем в ("history__right-arrow") !!!
+    &_no-cursor {
+      cursor: default;
+
+      &:hover .offset-arrows__right-image:first-of-type {
+        display: none;
+      }
+    }
+  }
+
+  &__left-image {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  &__right-image {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // offset-arrows__opacity-04
+  &__opacity-04 {
+    opacity: 0.4;
+  }
+
+  // offset-arrows__image-not-visible
+  &__image-not-visible {
+    display: none;
+  }
+} // offset-arrows
+
+// news
+.news {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px 72px;
+  overflow-x: scroll;
+  behavior: "smooth";
+
+  @media screen and (min-width: 576px) {
+    padding: 0 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 96px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+    padding-left: 240px;
+    overflow-x: hidden;
+  }
+
+  &__tape {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    position: relative;
+    transition: right 0.4s;
+    transition-property: right;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+
+  &__column {
+    min-width: 83.33vw;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    @media screen and (min-width: 576px) {
+      min-width: 480px;
+      padding-right: 140px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      min-width: 500px;
+      padding-right: 140px;
+    }
+
+    // news__column_clear
+    &_clear {
+      opacity: 1;
+      transition: opacity 0.5s;
+      transition-property: opacity;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #8967b1;
+
+    &:hover {
+      color: #50287d;
+    }
+  }
+
+  &__date {
+    display: block;
+    font-size: 13px;
+    color: #5a646e;
+    margin-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+} // news

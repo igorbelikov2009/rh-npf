@@ -1,0 +1,158 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  scroll-behavior: smooth; }
+
+.top-block {
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .top-block {
+      height: 552px;
+      padding: 48px 28px; } }
+  @media screen and (min-width: 1024px) {
+    .top-block {
+      padding-right: 0;
+      padding-left: 0; } }
+  .top-block__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+  .top-block__heading {
+    font-size: 26px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 8px; }
+    @media screen and (min-width: 768px) {
+      .top-block__heading {
+        font-size: 55px;
+        line-height: 73.54px;
+        margin-bottom: 22px; } }
+  .top-block__subheading {
+    font-size: 13px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 660px; }
+    @media screen and (min-width: 768px) {
+      .top-block__subheading {
+        font-size: 16px; } }
+    @media screen and (min-width: 768px) {
+      .top-block__subheading {
+        font-size: 16px; } }
+
+.taxation {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  border-color: #ffffff;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .taxation {
+      padding: 0px 28px; } }
+  @media screen and (min-width: 1024px) {
+    .taxation {
+      padding-left: 0;
+      padding-right: 0; } }
+  .taxation__block {
+    width: 100%; }
+  .taxation__table-block {
+    overflow-x: hidden;
+    position: relative; }
+  .taxation__table-container {
+    overflow-x: auto; }
+    @media screen and (min-width: 1024px) {
+      .taxation__table-container {
+        overflow-x: hidden; } }
+  .taxation__table-common {
+    color: #001100;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 576px;
+    margin: 10px 0;
+    position: relative; }
+    .taxation__table-common_gradient-left::before {
+      position: absolute;
+      display: block;
+      width: 24px;
+      top: 0;
+      bottom: 0;
+      background-image: radial-gradient(farthest-side, rgba(26, 65, 101, 0.5), transparent);
+      content: "";
+      right: auto;
+      left: -12px; }
+    .taxation__table-common_gradient-right::after {
+      position: absolute;
+      display: block;
+      width: 24px;
+      top: 0;
+      bottom: 0;
+      background-image: radial-gradient(farthest-side, rgba(49, 103, 155, 0.5), transparent);
+      content: "";
+      right: -12px;
+      left: auto;
+      box-sizing: inherit; }
+  .taxation__table-row {
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+    color: #001100;
+    border-top: 1px solid #e6f0fa;
+    vertical-align: baseline; }
+  .taxation__table-cell {
+    padding: 0 8px; }
+    .taxation__table-cell:first-of-type {
+      width: 43.16%;
+      padding-left: 0; }
+    .taxation__table-cell:nth-of-type(2) {
+      width: 27.1%; }
+    .taxation__table-cell:last-of-type {
+      width: 29.74%;
+      padding-right: 0; }
+  .taxation__cell-heading {
+    font-size: 13px;
+    color: #001100;
+    line-height: 1.5rem;
+    margin: 12px 0;
+    font-weight: 700; }
+  .taxation__cell-text {
+    font-size: 16px;
+    color: #001100;
+    line-height: 1.5rem;
+    margin: 12px 0;
+    font-weight: 500; }
+  .taxation__paragraph {
+    margin: 12px 0;
+    color: #5a646e;
+    font-weight: 400;
+    vertical-align: baseline;
+    box-sizing: border-box; }
+    .taxation__paragraph_before {
+      position: relative;
+      margin-left: 32px; }
+      .taxation__paragraph_before::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #50287d;
+        left: -24px;
+        top: 8px; }
+  .taxation__paragraph-heading {
+    color: #28323c;
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin: 24px 0; }

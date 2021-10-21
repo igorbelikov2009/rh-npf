@@ -1,0 +1,315 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  scroll-behavior: smooth; }
+
+.top-block {
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .top-block {
+      height: 552px;
+      padding: 48px 28px; } }
+  @media screen and (min-width: 1024px) {
+    .top-block {
+      padding-right: 0;
+      padding-left: 0; } }
+  .top-block__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+  .top-block__heading {
+    font-size: 26px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 8px; }
+    @media screen and (min-width: 768px) {
+      .top-block__heading {
+        font-size: 55px;
+        line-height: 73.54px;
+        margin-bottom: 22px; } }
+
+.questions-answers {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  border-color: #ffffff;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .questions-answers {
+      padding: 48px 28px 48px; } }
+  @media screen and (min-width: 768px) {
+    .questions-answers {
+      padding: 48px 28px 48px; } }
+  @media screen and (min-width: 1024px) {
+    .questions-answers {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media screen and (min-width: 1160px) {
+    .questions-answers {
+      padding-top: 72px; } }
+  .questions-answers__heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #363636;
+    margin-bottom: 24px; }
+  .questions-answers__table-block {
+    overflow-x: hidden;
+    position: relative; }
+  .questions-answers__table-container {
+    overflow-x: auto; }
+    @media screen and (min-width: 1024px) {
+      .questions-answers__table-container {
+        overflow-x: hidden; } }
+  .questions-answers__table-common {
+    color: #001100;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 576px;
+    margin: 10px 0;
+    position: relative; }
+    .questions-answers__table-common_gradient-left::before {
+      position: absolute;
+      display: block;
+      width: 24px;
+      top: 0;
+      bottom: 0;
+      background-image: radial-gradient(farthest-side, rgba(26, 65, 101, 0.5), transparent);
+      content: "";
+      right: auto;
+      left: -12px; }
+    .questions-answers__table-common_gradient-right::after {
+      position: absolute;
+      display: block;
+      width: 24px;
+      top: 0;
+      bottom: 0;
+      background-image: radial-gradient(farthest-side, rgba(49, 103, 155, 0.5), transparent);
+      content: "";
+      right: -12px;
+      left: auto;
+      box-sizing: inherit; }
+  .questions-answers__table-row {
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+    color: #001100;
+    border-top: 1px solid #e6f0fa;
+    vertical-align: baseline; }
+  .questions-answers__table-cell {
+    padding: 0 8px; }
+    .questions-answers__table-cell:first-of-type {
+      width: 43.16%;
+      padding-left: 0; }
+    .questions-answers__table-cell:nth-of-type(2) {
+      width: 27.1%; }
+    .questions-answers__table-cell:last-of-type {
+      width: 29.74%;
+      padding-right: 0; }
+  .questions-answers__cell-heading {
+    font-size: 13px;
+    color: #001100;
+    line-height: 1.5rem;
+    margin: 12px 0;
+    font-weight: 700; }
+  .questions-answers__cell-text {
+    font-size: 16px;
+    color: #001100;
+    line-height: 1.5rem;
+    margin: 12px 0;
+    font-weight: 500; }
+
+.pension-programs {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  border-color: #ffffff;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .pension-programs {
+      padding: 48px 28px; } }
+  @media screen and (min-width: 768px) {
+    .pension-programs {
+      padding: 48px 28px; } }
+  @media screen and (min-width: 1024px) {
+    .pension-programs {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media screen and (min-width: 1160px) {
+    .pension-programs {
+      padding-top: 72px; } }
+  .pension-programs__heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #363636;
+    margin-bottom: 24px; }
+
+.expanding {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #e6f0fa;
+  position: relative; }
+  .expanding__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 32px;
+    position: relative;
+    transition: padding 0.3s;
+    transition-property: padding;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; }
+  .expanding__title {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #50287d; }
+    .expanding__title:hover {
+      color: #000; }
+  .expanding__button {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 12px;
+    flex: none; }
+  .expanding__plus {
+    cursor: pointer;
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5; }
+    .expanding__plus_show-hiding-block {
+      opacity: 0;
+      transform: rotate(180deg);
+      transition: all 500ms; }
+    .expanding__plus_hide-hiding-block {
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: all 500ms; }
+  .expanding__minus {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6; }
+    .expanding__minus_show-hiding-block {
+      transform: rotate(180deg);
+      transition: all 500ms; }
+    .expanding__minus_hide-hiding-block {
+      transform: rotate(0deg);
+      transition: all 500ms; }
+  .expanding__hiding-block {
+    width: 100%;
+    padding: 24px 0 48px; }
+    .expanding__hiding-block_hidden {
+      display: none; }
+    .expanding__hiding-block_visible {
+      display: block; }
+  .expanding__paragraph {
+    margin: 12px 0;
+    color: #5a646e;
+    font-weight: 400;
+    vertical-align: baseline;
+    box-sizing: border-box; }
+    .expanding__paragraph_before {
+      position: relative;
+      margin-left: 32px; }
+      .expanding__paragraph_before::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #50287d;
+        left: -24px;
+        top: 8px; }
+  .expanding__link {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-decoration: none; }
+
+.support-form {
+  width: 100%;
+  background: #f3f5f7;
+  padding: 48px 24px; }
+  @media screen and (min-width: 576px) {
+    .support-form {
+      padding: 72px 28px; } }
+  .support-form__container {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto; }
+  .support-form__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 1160px) {
+      .support-form__content {
+        flex-wrap: nowrap; } }
+  .support-form__customer-service {
+    width: 100%; }
+    @media screen and (min-width: 1160px) {
+      .support-form__customer-service {
+        max-width: 360px; } }
+  .support-form__header {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .support-form__header {
+        margin-bottom: 48px; } }
+  .support-form__span {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: inline; }
+    @media screen and (min-width: 1160px) {
+      .support-form__span {
+        display: block; } }
+  .support-form__phone-support {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #00e;
+    display: block;
+    outline: none;
+    text-decoration: none; }
+  .support-form__phone-title {
+    font-size: 13px;
+    line-height: 24px;
+    color: #96a0aa;
+    margin-bottom: 48px; }
+  .support-form__form {
+    width: 100%;
+    max-width: 460px; }
+    @media screen and (min-width: 1160px) {
+      .support-form__form {
+        max-width: 460px;
+        margin-left: 40px; } }

@@ -1,0 +1,232 @@
+body * {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color: #5a646e;
+  scroll-behavior: smooth; }
+
+.top-block {
+  width: 100%;
+  height: 360px;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px; }
+  @media screen and (min-width: 576px) {
+    .top-block {
+      height: 552px;
+      padding: 48px 28px; } }
+  @media screen and (min-width: 1024px) {
+    .top-block {
+      padding-right: 0;
+      padding-left: 0; } }
+  .top-block__container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; }
+  .top-block__heading {
+    font-size: 26px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-bottom: 8px; }
+    @media screen and (min-width: 768px) {
+      .top-block__heading {
+        font-size: 55px;
+        line-height: 73.54px;
+        margin-bottom: 22px; } }
+
+.management {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative; }
+  @media screen and (min-width: 576px) {
+    .management {
+      padding-left: 28px;
+      padding-right: 28px; } }
+  .management__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 944px) {
+      .management__container {
+        flex-wrap: nowrap; } }
+  .management__content {
+    max-width: 760px;
+    width: 100%;
+    order: 1;
+    margin-bottom: 72px; }
+    @media screen and (min-width: 944px) {
+      .management__content {
+        order: 0; } }
+  .management__heading {
+    font-size: 34px;
+    line-height: 48px;
+    color: #28323c;
+    font-weight: 400;
+    letter-spacing: normal;
+    padding-top: 72px;
+    margin: 24px 0; }
+    @media screen and (min-width: 944px) {
+      .management__heading {
+        padding-top: 48px; } }
+  .management__description {
+    font-size: 18px;
+    line-height: 24px;
+    color: #5a646e;
+    margin: 24px 0; }
+  .management__name {
+    font-size: 34px;
+    line-height: 48px;
+    color: #28323c;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin-top: 72px; }
+  .management__name-span {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #001100; }
+  .management__post {
+    font-size: 16px;
+    line-height: 24px;
+    color: #96a0aa;
+    margin-bottom: 24px; }
+  .management__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a646e;
+    margin-bottom: 24px; }
+  .management__alignment-line {
+    border-top: 1px solid #e6f0fa;
+    margin-top: 63px;
+    position: relative;
+    top: 10px;
+    border: none; }
+  .management__department {
+    padding: 72px 24px 48px;
+    border-bottom: 1px solid #e6f0fa;
+    box-sizing: content-box;
+    margin: 0 auto; }
+    @media screen and (min-width: 576px) {
+      .management__department {
+        padding: 72px 0 24px; } }
+    @media screen and (min-width: 944px) {
+      .management__department {
+        padding-top: 48px; } }
+  .management__department-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 48px; }
+    @media screen and (min-width: 576px) {
+      .management__department-title {
+        font-size: 34px;
+        line-height: 48px; } }
+  .management__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .management__offis-man {
+    width: 100%;
+    margin-bottom: 24px; }
+    @media screen and (min-width: 576px) {
+      .management__offis-man {
+        width: 50%; } }
+    .management__offis-man:nth-of-type(2n) {
+      padding-left: 0; }
+      @media screen and (min-width: 576px) {
+        .management__offis-man:nth-of-type(2n) {
+          padding-left: 40px; } }
+  .management__man-name {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000000; }
+  .management__man-post {
+    font-size: 16px;
+    line-height: 24px;
+    color: #78828c;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .management__bar-container {
+    width: 100%;
+    overflow: hidden; }
+    @media screen and (min-width: 944px) {
+      .management__bar-container {
+        width: 352px;
+        margin-left: 48px;
+        overflow: hidden; } }
+  .management__bar-nav {
+    width: 100%;
+    height: 72px;
+    padding: 24px;
+    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px #9bc2e5;
+    background: #fff;
+    overflow-x: auto;
+    display: inline-flex;
+    transition: box-shadow 0.3s; }
+    .management__bar-nav_fixed {
+      position: fixed; }
+    .management__bar-nav::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+      background-color: #f1f1f1; }
+    .management__bar-nav::-webkit-scrollbar-thumb {
+      background-color: #c1c1c1;
+      border-radius: 9em; }
+    @media screen and (min-width: 944px) {
+      .management__bar-nav {
+        box-shadow: none;
+        position: fixed;
+        position: relative;
+        top: 0;
+        margin-top: 96px;
+        left: inherit;
+        display: block;
+        padding: 0 0 0 48px;
+        height: auto;
+        width: auto;
+        overflow: auto; } }
+  .management__bar-icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(0.75turn);
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: top 0.3s; }
+    @media screen and (min-width: 944px) {
+      .management__bar-icon {
+        display: block; } }
+  .management__bar-link {
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 24px;
+    font-size: 16px;
+    color: #50287d;
+    transition: color 0.3s;
+    outline: none;
+    text-decoration: none;
+    display: inline;
+    margin-right: 24px;
+    margin-bottom: 0; }
+    .management__bar-link_actived {
+      color: #28323c;
+      transition: color 0.3s; }
+    @media screen and (min-width: 944px) {
+      .management__bar-link {
+        white-space: normal;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 24px; } }
